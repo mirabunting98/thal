@@ -16,12 +16,13 @@
     <div class="ambient"></div>
 
     <aside class="earth-map" aria-live="polite">
-      <div class="earth-map__title">Earth Cross-Section Scale</div>
+      <div class="earth-map__title">Core → Crust Scale (2.8 million years)</div>
       <div class="earth-shells">
         <div class="shell shell--inner-core"></div>
         <div class="shell shell--outer-core"></div>
         <div class="shell shell--mantle"></div>
         <div class="shell shell--crust"></div>
+        <div class="earth-spear" aria-hidden="true"></div>
         <div class="depth-marker" id="depthMarker"></div>
       </div>
       <div class="earth-map__readout">
@@ -37,60 +38,53 @@
     </div>
 
     <main class="timeline">
-      <section class="slide intro" data-name="Proto-Homo" data-mya="2.8" data-depth="6371">
+      <section class="slide intro" data-name="Proto-Homo" data-depth="6371">
         <div class="slide__content left">
           <p class="kicker">Core / Oldest Homo Evidence (~2.8 million years ago)</p>
-          <h1>Time as a Long Spike Through Earth</h1>
+          <h1>A Spike of Time Through Earth</h1>
           <p>
             “If we think of time, of history, as a deep and long spike driving down into the
             center of the earth, into the earliest hominim life, Homo Sapiens is right up near
             the surface, the mere head of this spike that goes very, very long ways down.”
           </p>
           <p>
-            We begin at the deepest point of this visual metaphor: the <strong>oldest currently known Homo fossil evidence</strong>
-            (~2.8 million years ago, Ledi-Geraru, Ethiopia).
+            This journey uses a linear metaphor: <strong>2.8 million years</strong> mapped to Earth’s
+            radius (6,371 km), from core (earliest Homo evidence) toward crust (our time).
           </p>
         </div>
-        <div class="slide__visual right magma">
-          <div class="orb"></div>
-          <div class="pulse"></div>
+        <div class="slide__visual right panel-core">
+          <img src="assets/core-texture.svg" alt="Glowing earth core illustration" />
         </div>
       </section>
 
-      <section class="slide" data-name="Homo habilis" data-mya="2.4" data-depth="5461">
-        <div class="slide__visual left fossils">
-          <div class="bone bone-1"></div>
-          <div class="bone bone-2"></div>
-          <div class="bone bone-3"></div>
+      <section class="slide" data-name="Homo habilis" data-depth="5461">
+        <div class="slide__visual left panel-fossil">
+          <img src="assets/fossil-texture.svg" alt="Fossil bed illustration" />
         </div>
         <div class="slide__content right">
           <p class="kicker">~2.4 to 1.4 million years ago</p>
           <h2>Homo habilis</h2>
-          <p>
-            Often called one of the earliest well-documented Homo species. Associated with
-            Oldowan stone tools and East African fossil sites.
-          </p>
+          <p>Early Homo associated with Oldowan tools and East African fossil records.</p>
         </div>
       </section>
 
-      <section class="slide" data-name="Homo erectus" data-mya="1.9" data-depth="4323">
+      <section class="slide" data-name="Homo erectus" data-depth="4323">
         <div class="slide__content left">
           <p class="kicker">~1.9 million to ~110,000 years ago</p>
           <h2>Homo erectus</h2>
           <p>
-            A long-lived and widely dispersed species. Evidence suggests expansion from Africa
-            into Eurasia, larger body size, and more advanced Acheulean tools.
+            A long-lived, widely dispersed species with evidence of movement from Africa into
+            Eurasia and stronger Acheulean technologies.
           </p>
         </div>
-        <div class="slide__visual right migration">
-          <div class="continent africa"></div>
-          <div class="continent eurasia"></div>
-          <div class="travel-arc"></div>
+        <div class="slide__visual right panel-world">
+          <img src="assets/world-silhouette.svg" alt="World map showing migration" />
+          <span class="travel-dot"></span>
         </div>
       </section>
 
-      <section class="slide" data-name="Homo heidelbergensis" data-mya="0.7" data-depth="1593">
-        <div class="slide__visual left ice-age">
+      <section class="slide" data-name="Homo heidelbergensis" data-depth="1593">
+        <div class="slide__visual left panel-ice">
           <div class="glacier"></div>
           <div class="mist"></div>
         </div>
@@ -98,54 +92,54 @@
           <p class="kicker">~700,000 to ~200,000 years ago</p>
           <h2>Homo heidelbergensis</h2>
           <p>
-            Frequently discussed as a probable ancestor related to later lineages including
-            Neanderthals and Homo sapiens, depending on region and interpretation.
+            A likely lineage bridge in several regions, often discussed in relation to later
+            Neanderthal and sapiens populations.
           </p>
         </div>
       </section>
 
-      <section class="slide" data-name="Homo neanderthalensis" data-mya="0.4" data-depth="910">
+      <section class="slide" data-name="Homo neanderthalensis" data-depth="910">
         <div class="slide__content left">
           <p class="kicker">~400,000 to ~40,000 years ago</p>
           <h2>Homo neanderthalensis</h2>
           <p>
-            Neanderthals lived across Eurasia, adapted to diverse climates, and exchanged genes
-            with Homo sapiens.
+            Lived in Eurasia through changing climates, made complex tools, and interbred with
+            Homo sapiens.
           </p>
         </div>
-        <div class="slide__visual right aurora">
+        <div class="slide__visual right panel-aurora">
           <div class="ribbon r1"></div>
           <div class="ribbon r2"></div>
           <div class="ribbon r3"></div>
         </div>
       </section>
 
-      <section class="slide" data-name="Homo sapiens" data-mya="0.3" data-depth="683">
-        <div class="slide__visual left humanity">
+      <section class="slide" data-name="Homo sapiens" data-depth="683">
+        <div class="slide__visual left panel-humanity">
           <div class="city-glow"></div>
           <div class="grid"></div>
         </div>
         <div class="slide__content right">
           <p class="kicker">~300,000 years ago to present</p>
-          <h2>Homo sapiens: Near the Crust</h2>
+          <h2>Homo sapiens: near the crust</h2>
           <p>
-            On this core-to-crust scale, our species appears only at the very top. Most of the
-            spike lies below us in deep time.
+            In this scale, we appear almost at the surface. Nearly all the spike represents time
+            before us.
           </p>
         </div>
       </section>
 
-      <section class="slide outro" data-name="Reflection" data-mya="0.0" data-depth="0">
+      <section class="slide outro" data-name="Reflection" data-depth="0">
         <div class="slide__content full">
           <h2>At the Surface</h2>
           <blockquote>
             “And how bitterly ironic, Bruno said, that H. taridssimus strolls in at the end of
             the gaping stretch - unfathomable to the mind, so much time, H. tardissmus, aka
-            ‘Tardie’, arrives on the scene, only to destroy everything.”
+            ‘Tardie’, arrives on the scene, only to destroy everything.
           </blockquote>
           <p class="small-note">
-            Scientific note: depths are a proportional metaphor using Earth's radius (6,371 km)
-            mapped linearly to 2.8 million years of Homo time.
+            Scientific note: depths are a proportional visual metaphor only; absolute dates are
+            preserved in each species card.
           </p>
         </div>
       </section>
