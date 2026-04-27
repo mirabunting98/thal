@@ -1,0 +1,19 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800'>
+  <defs>
+    <linearGradient id='sand' x1='0' x2='0' y1='0' y2='1'>
+      <stop offset='0%' stop-color='#d6c19a'/>
+      <stop offset='100%' stop-color='#8f6f4a'/>
+    </linearGradient>
+  </defs>
+  <rect width='1200' height='800' fill='url(#sand)'/>
+  <g fill='none' stroke='#f3e2bd' stroke-width='12' stroke-linecap='round'>
+    <path d='M160 460c180-130 350-70 500 0'/>
+    <path d='M700 500c130-90 220-80 340 10'/>
+    <path d='M300 320c90 40 180 20 250-20'/>
+  </g>
+  <g fill='#74563a' fill-opacity='.25'>
+    <circle cx='120' cy='110' r='70'/>
+    <circle cx='960' cy='200' r='90'/>
+    <circle cx='760' cy='680' r='120'/>
+  </g>
+</svg>
